@@ -1,0 +1,64 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Formulario</h1>
+    </header>
+    
+    <main>
+    <form method="get" class="formulario">
+        <fieldset>
+            <legend>Datos personales</legend>
+    
+            <div class="contenedor">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresar nombre" class="entrada" required>
+            </div>
+
+            <div class="contenedor">
+            <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresar apellido" class="entrada" required>
+            </div>
+
+            <div class="contenedor">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresar email" class="entrada" required>
+            </div>
+
+            <div class="contenedor">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresar número" pattern="[0-9]{9}" class="entrada" required>
+            </div>
+            
+            <div class="contenedor">
+                <label>Genero: </label>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+            </div>
+            
+            <div class="contenedor">
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="date" id="fecha" name="fecha" class="entrada" required>
+            </div>
+            
+            <div class="contenedor">
+                <header><label for="comentario">Comentario adicional</label></header>
+                <textarea id="comentario" name="comentario" rows="2" cols="30"></textarea><br/>
+            </div>
+
+            <div class="contenedor" style="text-align: center;">
+                <button class="boton">Enviar</button>
+            </div>
+            
+        </fieldset>   
+    </form>
+</main>
+</body>
+</html>
